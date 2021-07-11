@@ -1,0 +1,51 @@
+﻿<Window x:Class="ATM.OperationsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM"
+        mc:Ignorable="d" FontSize="18"
+        Title="Your ATM" Height="450" Width="400"
+        FontFamily="Helvetica"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        MouseDown="OperationsWindow_MouseDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Border CornerRadius="20" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="AntiqueWhite"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <Image Source="/Images/ATM_icon.png" Width="120" Margin="0,30,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
+            <Button Width="150" Height="50" Content ="WITHDRAW" Margin="0,0,0,20" Click="ButtonWithdraw_Click"></Button>
+            <Button Width="150" Height="50" Content ="CHECK BALANCE" Margin="0,20,0,0" Click="ButtonCheckBalance_Click"></Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+            <Button Width="150" Height="50" Content ="DEPOSIT" Margin="0,0,0,20" Click="ButtonDeposit_Click"></Button>
+            <Button Width="150" Height="50" Content ="LOGOUT" Margin="0,20,0,0" Click="ButtonLogout_Click"></Button>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
+ 

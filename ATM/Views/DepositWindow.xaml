@@ -1,0 +1,78 @@
+﻿<Window x:Class="ATM.DepositWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM"
+        mc:Ignorable="d" FontSize="18"
+        Title="Your ATM" Height="450" Width="400"
+        FontFamily="Helvetica"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        MouseDown="DepositWindow_MouseDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Border CornerRadius="20" Grid.RowSpan="2" Grid.ColumnSpan="3">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="AntiqueWhite"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <StackPanel Grid.ColumnSpan="3">
+
+            <Image Source="/Images/Withdrawal_icon.png" Width="120" Margin="0,30,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" Grid.ColumnSpan="3">
+            <TextBox x:Name="DepositAmount"
+                     FontWeight="Light"
+                     Text="Deposit amount"
+                     FontSize="20"
+                     HorizontalAlignment = "Center"
+                     Foreground="Black"
+                     Background="Transparent"
+                     BorderThickness="0"
+                     Width="235"
+                     Height="25"
+                     HorizontalContentAlignment="Center"
+                     GotFocus="TextBox_GotFocus"
+                     PreviewTextInput="DepositAmount_PreviewTextInput"
+                     TextChanged="DepositAmount_TextChanged"/>
+
+            <Border Width="150"
+                Height="2"
+                Background="Black"
+                Opacity="0.5"
+                Margin="0,0,0,5"/>
+            
+            <Button x:Name="ButtonDeposit" Width="120" Height="50" Content ="DEPOSIT" Click="ButtonDeposit_Click" IsEnabled="False"></Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Margin="10,0,0,0" Orientation="Vertical" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="50" Click="Button50_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="100" Click="Button100_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="150" Click="Button150_Click"></Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Margin="0,0,10,0" Orientation="Vertical" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right">
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="200" Click="Button200_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="250" Click="Button250_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="300" Click="Button300_Click"></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
+ 
