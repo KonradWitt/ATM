@@ -45,7 +45,8 @@
                      HorizontalContentAlignment="Center"
                      GotFocus="TextBox_GotFocus"
                      PreviewTextInput="TextBox_PreviewTextInput"
-                     TextChanged="TextBox_TextChanged"/>
+                     TextChanged="TextBox_TextChanged"
+                     ToolTip="Example login credintials:&#10;Account number: 123, Pin: 123&#10;Account number: 456, Pin: 456&#10;Account number: 789, Pin: 789"/>
             <Border Width="250"
                 Height="2"
                 Background="Black"
@@ -64,7 +65,8 @@
                      GotFocus="PasswordBox_GotFocus"
                      Margin="0,20,0,0"
                      PreviewTextInput="PasswordBox_PreviewTextInput"
-                     PasswordChanged="PasswordBox_PasswordChanged"/>
+                     PasswordChanged="PasswordBox_PasswordChanged"
+                     ToolTip="Example login credintials:&#10;Account number: 123, Pin: 123&#10;Account number: 456, Pin: 456&#10;Account number: 789, Pin: 789"/>
             <Border Width="250"
                 Height="2"
                 Background="Black"

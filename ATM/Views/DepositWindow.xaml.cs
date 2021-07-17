@@ -70,7 +70,8 @@ namespace ATM
 
         private void ButtonDeposit_Click(object sender, RoutedEventArgs e)
         {
-            string message = session.PayIn(Convert.ToDouble(DepositAmount.Text));
+            string message;
+            session.PayIn(Convert.ToDouble(DepositAmount.Text), out message);
             OpSummaryWindow nextWindow = new OpSummaryWindow(session, message);
             nextWindow.Top = Top;
             nextWindow.Left = Left;

@@ -2,49 +2,46 @@
 
 namespace ATM
 {
-    static class LoginHelper
+    public static class LoginHelper
     {
-        public static string TryLogin(uint accountNumber, uint pin, out Session session)
+        public static bool TryLogin(uint accountNumber, uint pin, out Session session, out string message)
         {
-            Account account = DatabaseHelper.GetAccount(accountNumber);
             session = null;
-            string message = "";
+            message = "";
+            Account account = DatabaseHelper.GetAccount(accountNumber);
 
             if (account == null)
             {
                 message = "Invalid login credentials. Please try again.";
-
-                return message;
+                return false;
             }
 
             if (account.Pin != pin)
             {
                 HandleWrongPin(account);
+                DatabaseHelper.UpdateAccount(account);
                 if (!account.Locked)
                 {
                     message = "Invalid login credentials.";
-                    return message;
                 }
                 else
                 {
                     message = "Your account is locked." + Environment.NewLine + "Please contact our customer service.";
-
-                    return message;
                 }
+                return false;
             }
 
             if (account.Locked)
             {
                 message = "Your account is locked." + Environment.NewLine + "Please contact our customer service.";
-
-                return message;
+                return false;
             }
 
             account.ResetLoginAttempts();
 
             session = new Session(account);
 
-            return message;
+            return true;
         }
 
         private static void HandleWrongPin(Account account)

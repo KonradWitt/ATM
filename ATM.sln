@@ -5,16 +5,32 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM", "ATM\ATM.csproj", "{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM_Tests", "ATM_Tests\ATM_Tests.csproj", "{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}.Debug|x64.ActiveCfg = Debug|x64
+		{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}.Debug|x64.Build.0 = Debug|x64
 		{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}.Release|x64.ActiveCfg = Release|x64
+		{12C7F945-9A8E-4D3E-BCE9-2E6E595FD84B}.Release|x64.Build.0 = Release|x64
+		{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}.Debug|x64.Build.0 = Debug|Any CPU
+		{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}.Release|x64.ActiveCfg = Release|Any CPU
+		{2B769D6A-FC07-4BE0-B4CB-434D5DFE836B}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

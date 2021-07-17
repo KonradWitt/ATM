@@ -1,7 +1,6 @@
 D:\RepoWitt\ATM\ATM\bin\Debug\ATM.exe.config
 D:\RepoWitt\ATM\ATM\bin\Debug\ATM.exe
 D:\RepoWitt\ATM\ATM\bin\Debug\ATM.pdb
-D:\RepoWitt\ATM\ATM\obj\Debug\ATM.csprojAssemblyReference.cache
 D:\RepoWitt\ATM\ATM\obj\Debug\App.g.cs
 D:\RepoWitt\ATM\ATM\obj\Debug\ATM_MarkupCompile.cache
 D:\RepoWitt\ATM\ATM\obj\Debug\ATM_MarkupCompile.lref

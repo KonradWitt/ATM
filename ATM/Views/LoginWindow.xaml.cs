@@ -56,6 +56,7 @@ namespace ATM
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
             Session session;
+            string message;
             uint accountNumber;
             uint pin;
 
@@ -68,15 +69,15 @@ namespace ATM
             {
                 accountNumber = 0;
                 pin = 0;
-            }
-                  
-            string message = LoginHelper.TryLogin(accountNumber, pin, out session);
+            }     
 
-            if (session != null)
+            if (LoginHelper.TryLogin(accountNumber, pin, out session, out message))
             {
-                OperationsWindow nextWindow = new OperationsWindow(session);
-                nextWindow.Top = Top;
-                nextWindow.Left = Left;
+                OperationsWindow nextWindow = new OperationsWindow(session)
+                {
+                    Top = Top,
+                    Left = Left
+                };
                 nextWindow.Show();
                 Close();
             }

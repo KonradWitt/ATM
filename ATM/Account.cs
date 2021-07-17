@@ -39,6 +39,10 @@
             {
                 RemainingLoginAttempts -= 1;
             }
+            else 
+            {
+                RemainingLoginAttempts = 0;
+            }
         }
 
         public void ResetLoginAttempts()

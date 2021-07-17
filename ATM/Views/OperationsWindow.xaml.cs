@@ -33,7 +33,8 @@ namespace ATM
 
         private void ButtonCheckBalance_Click(object sender, RoutedEventArgs e)
         {
-            string message = session.CheckBalance();
+            string message; 
+            session.CheckBalance(out message);
             OpSummaryWindow nextWindow = new OpSummaryWindow(session, message);
             nextWindow.Top = Top;
             nextWindow.Left = Left;

@@ -69,7 +69,8 @@ namespace ATM
 
         private void ButtonWithdraw_Click(object sender, RoutedEventArgs e)
         {
-            string message = session.PayOut(Convert.ToDouble(WithdrawalAmount.Text));
+            string message;
+            session.PayOut(Convert.ToDouble(WithdrawalAmount.Text), out message); ;
             OpSummaryWindow nextWindow = new OpSummaryWindow(session, message);
             nextWindow.Top = Top;
             nextWindow.Left = Left;
