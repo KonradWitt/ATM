@@ -3,7 +3,6 @@ D:\RepoWitt\ATM\ATM\bin\x64\Debug\Database_log.ldf
 D:\RepoWitt\ATM\ATM\bin\x64\Debug\ATM.exe.config
 D:\RepoWitt\ATM\ATM\bin\x64\Debug\ATM.exe
 D:\RepoWitt\ATM\ATM\bin\x64\Debug\ATM.pdb
-D:\RepoWitt\ATM\ATM\obj\x64\Debug\ATM.csprojAssemblyReference.cache
 D:\RepoWitt\ATM\ATM\obj\x64\Debug\ButtonTheme.baml
 D:\RepoWitt\ATM\ATM\obj\x64\Debug\Views\OpSummaryWindow.g.cs
 D:\RepoWitt\ATM\ATM\obj\x64\Debug\Views\AboutWindow.g.cs
@@ -28,3 +27,4 @@ D:\RepoWitt\ATM\ATM\obj\x64\Debug\ATM.csproj.GenerateResource.cache
 D:\RepoWitt\ATM\ATM\obj\x64\Debug\ATM.csproj.CoreCompileInputs.cache
 D:\RepoWitt\ATM\ATM\obj\x64\Debug\ATM.exe
 D:\RepoWitt\ATM\ATM\obj\x64\Debug\ATM.pdb
+D:\RepoWitt\ATM\ATM\obj\x64\Debug\ATM.csproj.AssemblyReference.cache

@@ -62,15 +62,15 @@
         </StackPanel>
 
         <StackPanel Grid.Column="0" Margin="10,0,0,0" Orientation="Vertical" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left">
-            <Button Width="75" Height="50" Margin="0,10,0,10" Content="50" Click="Button50_Click"></Button>
-            <Button Width="75" Height="50" Margin="0,10,0,10" Content="100" Click="Button100_Click"></Button>
-            <Button Width="75" Height="50" Margin="0,10,0,10" Content="150" Click="Button150_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="$50" Click="Button50_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="$100" Click="Button100_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="$150" Click="Button150_Click"></Button>
         </StackPanel>
 
         <StackPanel Grid.Column="2" Margin="0,0,10,0" Orientation="Vertical" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right">
-            <Button Width="75" Height="50" Margin="0,10,0,10" Content="200" Click="Button200_Click"></Button>
-            <Button Width="75" Height="50" Margin="0,10,0,10" Content="250" Click="Button250_Click"></Button>
-            <Button Width="75" Height="50" Margin="0,10,0,10" Content="300" Click="Button300_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="$200" Click="Button200_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="$250" Click="Button250_Click"></Button>
+            <Button Width="75" Height="50" Margin="0,10,0,10" Content="$300" Click="Button300_Click"></Button>
         </StackPanel>
 
     </Grid>
