@@ -2,13 +2,14 @@
 {
     public class Account
     {
-        public readonly uint Number;
-        public ushort Pin {get; private set;}
+        public readonly int Number;
+
+        public int Pin {get; private set;}
         public double Balance {get; private set;}
-        public uint RemainingLoginAttempts {get; private set;}
+        public int RemainingLoginAttempts {get; private set;}
         public bool Locked { get; private set;}
 
-        public Account(uint number, ushort pin, double balance, uint remainingLoginAttempts, bool locked)
+        public Account(int number, int pin, double balance, int remainingLoginAttempts, bool locked)
         {
             Number = number;
             Pin = pin;

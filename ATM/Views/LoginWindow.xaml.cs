@@ -57,13 +57,13 @@ namespace ATM
         {
             Session session;
             string message;
-            uint accountNumber;
-            uint pin;
+            int accountNumber;
+            int pin;
 
             try
             {
-                accountNumber = Convert.ToUInt32(TextBox.Text);
-                pin = Convert.ToUInt32(PasswordBox.Password);
+                accountNumber = Convert.ToInt32(TextBox.Text);
+                pin = Convert.ToInt32(PasswordBox.Password);
             }
             catch
             {

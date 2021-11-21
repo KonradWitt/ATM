@@ -18,7 +18,8 @@ namespace ATM
 
         public void CloseSession()
         {
-            DatabaseHelper.UpdateAccount(account);
+            DatabaseHelper databaseHelper = new DatabaseHelper();
+            databaseHelper.UpdateAccount(account);
         }
 
         public void PayIn(double amount, out string message)

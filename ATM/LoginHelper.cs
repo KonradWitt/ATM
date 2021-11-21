@@ -4,11 +4,12 @@ namespace ATM
 {
     public static class LoginHelper
     {
-        public static bool TryLogin(uint accountNumber, uint pin, out Session session, out string message)
+        public static bool TryLogin(int accountNumber, int pin, out Session session, out string message)
         {
             session = null;
             message = "";
-            Account account = DatabaseHelper.GetAccount(accountNumber);
+            DatabaseHelper databaseHelper = new DatabaseHelper();
+            Account account = databaseHelper.GetAccount(accountNumber);
 
             if (account == null)
             {
@@ -19,7 +20,7 @@ namespace ATM
             if (account.Pin != pin)
             {
                 HandleWrongPin(account);
-                DatabaseHelper.UpdateAccount(account);
+                databaseHelper.UpdateAccount(account);
                 if (!account.Locked)
                 {
                     message = "Invalid login credentials.";
